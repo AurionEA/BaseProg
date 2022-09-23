@@ -21,11 +21,15 @@ int main() {
 	}
 
 	//Вывод чисел
-	for (int i = 0; i < x; i++) {
-		if (arr[i] > 0 && i > 0) {
-			std::cout << " +";
+	std::cout << arr[0];
+	for (int i = 1; i < x; i++) {
+		if (arr[i] > 0) {
+			std::cout << " + " << arr[i];
 		}
-		std::cout << " " << arr[i];
+		else
+		{
+			std::cout << " - " << -arr[i];
+		}
 	}
 	std::cout << " = ";
 
